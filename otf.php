@@ -24,8 +24,17 @@ Author URI: http://account.onetruefan.com/widget?wp-plugin
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-add_action('wp_footer', 'add_otf_widget');
-
-function add_otf_widget() {
-	echo "<script type=\"text/javascript\" src=\"http://e.onetruefan.com/js/widget.js\"></script>\n";
+// Don't display in the admin section
+if ( ! is_admin() ) {
+	/**
+		Enqueue our script to be rendered by WordPress in the footer.
+		
+		See: http://codex.wordpress.org/Function_Reference/wp_enqueue_script
+	*/
+	function add_onetruefan_widget() {
+		wp_enqueue_script( 'onetruefan_widget', 'http://e.onetruefan.com/js/widget.js', array(), false, true );
+	}
+	
+	// Add our method to the `init` hook
+	add_action( 'init', 'add_onetruefan_widget' );
 }
