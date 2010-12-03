@@ -27,5 +27,5 @@ Author URI: http://account.onetruefan.com/widget?wp-plugin
 add_action('wp_footer', 'add_otf_widget');
 
 function add_otf_widget() {
-	echo "<script src=\"http://e.onetruefan.com/js/widget.js\"></script>\n";
+	echo "<script type=\"text/javascript\" src=\"http://e.onetruefan.com/js/widget.js\"></script>\n";
 }
