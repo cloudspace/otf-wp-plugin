@@ -9,65 +9,23 @@ Displays the OneTrueFan bar on your blog.
 
 == Description ==
 
-Hi Scott this is Josh typing
+Displays the OneTrueFan bar on your blog, bringing to light the community that already exists at your site.
 
 == Installation ==
 
-This section describes how to install the plugin and get it working.
+**Instructions for the Admin Panel**
 
-e.g.
+1. Navigate to the admin panel for your WordPress blog (by default at `/wp-admin`) and login
+2. Expand the Plugins menu on the right-hand side, and select "Add New" from the submenu
+3. Search for "onetruefan"
+4. Enter your connection information and click "Proceed"
+5. Activate the plugin in the Plugins pane after the upload in complete
 
-1. Upload `plugin-name.php` to the `/wp-content/plugins/` directory
-1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Place `<?php do_action('plugin_name_hook'); ?>` in your templates
+**Manual instructions**
 
-== Frequently Asked Questions ==
-
-= A question that someone might have =
-
-An answer to that question.
-
-= What about foo bar? =
-
-Answer to foo bar dilemma.
+1. Upload the `otf-wp-plugin` directory to the `wp-content/plugins/` directory on your server
+2. Activate the plugin through the 'Plugins' menu in WordPress
 
 == Screenshots ==
 
 http://img.skitch.com/20101202-npmw8swtn99jnsy5y94r3g6qhd.jpg
-
-== Changelog ==
-
-
-== Upgrade Notice ==
-
-
-== Arbitrary section ==
-
-You may provide arbitrary sections, in the same format as the ones above.  This may be of use for extremely complicated
-plugins where more information needs to be conveyed that doesn't fit into the categories of "description" or
-"installation."  Arbitrary sections will be shown below the built-in sections outlined above.
-
-== A brief Markdown Example ==
-
-Ordered list:
-
-1. Some feature
-1. Another feature
-1. Something else about the plugin
-
-Unordered list:
-
-* something
-* something else
-* third thing
-
-Here's a link to [WordPress](http://wordpress.org/ "Your favorite software") and one to [Markdown's Syntax Documentation][markdown syntax].
-Titles are optional, naturally.
-
-[markdown syntax]: http://daringfireball.net/projects/markdown/syntax
-            "Markdown is what the parser uses to process much of the readme file"
-
-Markdown uses email style notation for blockquotes and I've been told:
-> Asterisks for *emphasis*. Double it up  for **strong**.
-
-`<?php code(); // goes in backticks ?>`
